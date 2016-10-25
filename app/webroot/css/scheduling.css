@@ -1,0 +1,165 @@
+/*
+ * General classes
+ */
+
+.left {float: left;}
+.right {float: right;}
+.clear {clear: both;}
+.isolated {margin: 5px;}
+.kicker {margin-bottom: 1em;}
+.unbold, .unbold * {font-weight: normal;}
+.underlined {border-bottom: 1px solid #000;}
+.padded {padding: 5px;}
+.marked {background: #ff0;}
+.short {width: 3em;}
+.small {width: 4em;}
+.medium {width: 9em;}
+.separated {margin-top: 1em;}
+.green {background: #0f0;}
+.txt-ulined {text-decoration: underline;}
+a.txt-ulined:hover {text-decoration: none;}
+.center {text-align: center;}
+.bold, .unbold * {font-weight: bold;}
+
+
+/**
+ * Forms
+ */
+
+form label {font-weight: bold;}
+form div.input {padding: 2px; margin: 1px; border: 1px solid #fff;}
+form div.input label{float: left; min-width: 9em;}
+
+form#login {background: #ccc; width: 400px;}
+form#login div.input {font-family: Courier, monospace;}
+form#login div.input label{min-width: 0; float: right;}
+
+label.short {margin: 0 3px;}
+input.short {}
+
+
+/**
+ * Horizontal Menu
+ */
+
+#menu {height: 30px; float: right; margin-right: 1em;}
+	#menu a {color: #F7F7F7; line-height: 30px; background: #7D176F;}
+
+
+/**
+ * Messages
+ * from http://www.jankoatwarpspeed.com/post/2008/05/22/CSS-Message-Boxes-for-different-message-types.aspx
+ * todo: change specific urls
+ */
+
+.message, .success, .warning, .error, .validation {
+	border: 1px solid;
+	margin: 10px 5px;
+	padding:15px 10px 15px 50px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+}
+.message {
+	color: #00529B;
+	background-color: #BDE5F8;
+	background-image: url('/scheduling/img/icons/info.png');
+}
+.success {
+	color: #4F8A10;
+	background-color: #DFF2BF;
+	background-image: url('/scheduling/img/icons/success.png');
+}
+.warning {
+	color: #9F6000;
+	background-color: #FEEFB3;
+	background-image: url('/scheduling/img/icons/warning.png');
+}
+.error {
+	color: #D8000C;
+	background-color: #FFBABA;
+	background-image: url('/scheduling/img/icons/error.png');
+}
+.mini {padding: 0 0 0 50px;}
+
+
+/**
+ * RIA elements
+ */
+
+.highlight:hover {background: #999; border-color: #999;}
+.highlight:hover td {border-color: #999;}
+.selectable {color: #000; cursor: pointer;}
+.selectable:hover {color: #fff;}
+	.selectable a {color: inherit; text-decoration: none;}
+
+
+/**
+ * Lists
+ */
+
+.selector {/*height: 30px;*/ margin: 5px; border: 1px solid #EBEBEB; /*line-height: 30px;*/ padding-left: 5px;}
+
+
+/**
+ * Calendar
+ */
+
+#calendar {margin: 0 5px 5px 5px;}
+#calHead {height: 30px; border: 1px solid #EBEBEB; margin-bottom: 5px;}
+#calMain {width: 580px; height: 995px; float: left; margin-right: 10px;}
+	#calMainHead {
+		height: 30px; background: #CCCCCC;
+		color: #fff; font-weight: bold; font-size: 16px; text-align: center; line-height: 30px;
+	}
+#calMonth {width: 161px; border: 1px solid #7D176F; float: left;}
+
+.caption {margin: 8px 1em 0 0; height: 15px; border: 1px solid #EBEBEB; float: right;}
+.available {background: #EDFCEF;}
+.occupied {color: #000; background: #F9CAF5;}
+.optional {color: #666; background: #ccc;}
+	#slot_a {position: relative; top: -35px;}
+
+table.calendar, .calendar th, .calendar td {border: 1px solid #EBEBEB;}
+	.calendar th.current, .calendar td.current {}	/* xxx: ??? */
+.calendar tr.weekdays {height: 30px;}
+	tr.weekdays th {width: 76px; max-width: 76px; overflow: hidden;}
+.calendar tr.time-slots {height: 15px;}
+	tr.time-slots td.hour {text-align: center; width: 40px; max-width: 40px; overflow: hidden;}
+	.slot {
+		font-size: 9px; line-height: 15px;
+		width: 76px; max-width: 76px; overflow: hidden;
+	} .slot * {font-size: 9px; line-height: 15px;}
+		.slot div.slot {border: 1px solid #ccc; border-left: none; border-right: none;}	/*occupied slots*/
+		.slot:hover {overflow: visible;}
+		.slot:hover {height: auto; background: #ff0; z-index: 1;} td.slot:hover {background: inherit;}
+		.slot_txt {position: absolute; left: 0; top: 0; height: 100%;}
+		.slot_txt a {text-decoration: none;}
+.course, .lesson {
+	position: relative;
+	border: 1px solid #ccc; border-top: none; border-left: none;
+}
+.course:hover {color: #000; background: #ff0; cursor: pointer;}
+.active {border: 3px solid #FF7F50; margin: -3px;}
+
+.right-bar {max-width: 166px; padding: 0; margin: 0;}
+
+
+/**
+ * Time-Slot Assignment
+ */
+
+#coursenlesson {width: 500px; float: left;}
+
+#daytable {float: right; border: 1px solid #ccc; width: 250px; margin-right: 5px;}
+#daytable * {font-size: 12px; line-height: 12px;}
+	#daytable tr {height: 24px;}
+	
+	.time-slot {
+		position: relative; left: 533px;
+		width: 220px;
+		border: 1px solid #000;
+	}
+	.ts-label {text-align: center; height: 100px;}
+	.ts-lesson {position: relative; left: 534px; width: 220px; overflow: hidden;}
+	.ts-lesson .cap, .ts-lesson .cap a {font-size: 10px; text-align: center;}
+	
