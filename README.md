@@ -1,5 +1,6 @@
 This file was created in 2016 to document this old project.  
-This is a CakePHP web application.
+This is a CakePHP web application.  
+Modified in 2016 to serve as a demo of the original.
 
 ## Appointment Scheduling System
 For NYU Steinhardt MPAP department  
