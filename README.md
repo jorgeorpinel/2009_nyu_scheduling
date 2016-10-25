@@ -14,9 +14,14 @@ For NYU Steinhardt MPAP department
 **Front-end**
 * Prototype.js 1.5.1
 
-## Usage
+## config
 
-You can import `2009_12_20_dump.sql` (parent dir).
+Make sure `app/config/core.php` has the appropriate values (notice debug, session, and cache mainly).  
+A database must exist and `app/config/database.php` needs the correct values to connect.
+Easy option: import `sql/2009_12_20_dump.sql` into the db.
+Fun option: import the minimal db structure and values with `sql/2009_12_22_instal.sql` and import the XLS files in `xls/` as an admin user.
+
+## Usage
 
 ### Students
 
