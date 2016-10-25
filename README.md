@@ -2,7 +2,7 @@ This file was created in 2016 to document this old project.
 This is a CakePHP web application.  
 Modified in 2016 to serve as a demo of the original.
 
-## Appointment Scheduling System
+## Private Lesson Scheduling System
 For NYU Steinhardt MPAP department  
 &copy; 2009 [Jorge Orpinel](http://jorge.orpinel.com)
 
