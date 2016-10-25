@@ -13,3 +13,17 @@ For NYU Steinhardt MPAP department
 
 **Front-end**
 * Prototype.js 1.5.1
+
+## Usage
+
+You can import `2009_12_20_dump.sql` (parent dir).
+
+### Students
+
+A sample student creds are **N16176849**:_student_. Students can view their courses (`/my_courses`) and their **semester schedule** (`/students/schedule/{UserId}`).
+
+### Admins
+
+The default sys admin credentials are **admin**:_admin_. Admins can **manage or import from XML** courses (`/admin/courses`), faculty member records (`/admin/faculty`), and student profiles (`/admin/students`); They may also **manage users** (`/admin/users`).
+
+For a full list of available processes, their URLs and controller method mapping, see [2009 NYU - Scheduling - Processes.xls](https://1drv.ms/x/s!AgNFd02XYIc1hQzv5AWWhdMtGlM3).

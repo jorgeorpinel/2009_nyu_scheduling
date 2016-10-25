@@ -1,6 +1,7 @@
 <h2><?=$this->pageTitle?></h2>
 
-<?=$form->create('User', array('url'=>"/{$this->data['User']['type']}/edit/{$this->data['User']['id']}"))?>
+<?//=$form->create('User', array('url'=>"/{$this->data['User']['type']}/edit/{$this->data['User']['id']}"))?>
+<?=$form->create('User', array('url'=>$this->url))?>
 
   <p>This user, with ID <b><?=$this->data['User']['id']?></b> is part of the <b><?=$this->data['User']['type']?></b>.</p>
   <?=$form->input('password', array('after'=>' leave blank to keep the existing one'))?>
