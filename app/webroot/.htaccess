@@ -1,3 +1,6 @@
+# Legacy PHP code
+php_flag short_open_tag on
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteCond %{REQUEST_FILENAME} !-d

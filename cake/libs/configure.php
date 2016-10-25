@@ -254,7 +254,7 @@ class Configure extends Object {
  *     'key1' => 'value of the Configure::One[key1]',
  *     'key2' => 'value of the Configure::One[key2]'
  * );
- * 
+ *
  * Configure::write(array(
  *     'One.key1' => 'value of the Configure::One[key1]',
  *     'One.key2' => 'value of the Configure::One[key2]'
@@ -292,7 +292,7 @@ class Configure extends Object {
 
 		if (isset($config['debug'])) {
 			if ($_this->debug) {
-				error_reporting(E_ALL);
+				error_reporting(E_ALL & ~E_DEPRECATED & ~E_STRICT); // XXX Legacy PHP code
 
 				if (function_exists('ini_set')) {
 					ini_set('display_errors', 1);

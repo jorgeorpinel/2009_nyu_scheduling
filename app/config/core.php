@@ -38,7 +38,8 @@
  * In production mode, flash messages redirect after a time interval.
  * In development mode, you need to click the flash message to continue.
  */
-	Configure::write('debug', 0);
+	Configure::write('debug', 1);
+	// error_reporting(E_ALL & ~E_DEPRECATED & ~E_STRICT); // XXX Legacy PHP code -> moved to cake/libs/configure.php
 /**
  * Application wide charset encoding
  */

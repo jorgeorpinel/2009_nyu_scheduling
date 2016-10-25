@@ -8,8 +8,8 @@ For NYU Steinhardt MPAP department
 ## Requires
 
 **Back-end**
-* [PHPExcelReader](http://sourceforge.net/projects/phpexcelreader) from 2008 in `vendors/excel/`
 * [CakePHP 1.2.4](http://book.cakephp.org/1.2/en/) core in `cake/` ([download](https://github.com/cakephp/cakephp/releases/tag/1.2.4))
-* [SimpleTest 1.0.1](https://sourceforge.net/projects/simpletest/files/simpletest/simpletest_1.0.1/) in `vendors/simpletest/` ([read more](http://book.cakephp.org/1.2/en/The-Manual/Common-Tasks-With-CakePHP/Testing.html))
+* [PHPExcelReader](http://sourceforge.net/projects/phpexcelreader) from 2008 in `vendors/excel/`
 
 **Front-end**
+* Prototype.js 1.5.1

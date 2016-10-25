@@ -1,5 +1,8 @@
+# Legacy PHP code
+php_flag short_open_tag on
+
 <IfModule mod_rewrite.c>
     RewriteEngine on
     RewriteRule    ^$    webroot/    [L]
     RewriteRule    (.*) webroot/$1    [L]
- </IfModule>
+</IfModule>

@@ -4,11 +4,11 @@
 
   <p>This user, with ID <b><?=$this->data['User']['id']?></b> is part of the <b><?=$this->data['User']['type']?></b>.</p>
   <?=$form->input('password', array('after'=>' leave blank to keep the existing one'))?>
-  
+
   <h3 class="separated">Personal Information</h3>
   <?=$form->input('first_name')?>
   <?=$form->input('last_name')?>
-  
+
   <h3 class="separated">Contact Information</h3>
   <?=$form->input('email', array('after'=>' This will be the preferred channel of communication.'))?>
   <?=$form->input('telephone', array('after'=>' not shared with other users'))?>
